@@ -1,0 +1,26 @@
+<div id="post">
+    <div class="article">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="article-title"><%= page.title || '(no title)' %></h1>
+                <div class="article-meta text-muted">
+                    <i class="glyphicon glyphicon-user"></i> <span><%= config.author %></span>&nbsp;
+                    <i class="glyphicon glyphicon-time"></i> <span><%= date(page.date, null) %></span>&nbsp;
+                    <i class="glyphicon glyphicon-hdd"></i>
+                    <span class="article-category">
+                        <%- list_categories(page.categories, {
+                                show_count: false,
+                                class: 'article-category',
+                                style: 'none',
+                                separator: ' / '
+                        }) %>
+                    </span>
+                </div>
+                <hr>
+                <div class="article-content">
+                    <%- page.content %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

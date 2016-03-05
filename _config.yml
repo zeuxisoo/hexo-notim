@@ -1,5 +1,5 @@
 gravatar:
-  email: "seekstudio@gmail.com"
+  email: "username@email.com"
   size : 40
 
 menu:
@@ -10,8 +10,8 @@ menu:
   - name: Tags
     url : /tags
   - name: Profile
-    url : http://profile.not.im
+    url : http://profile.domain.com
   - name: Labs
-    url : http://labs.not.im
+    url : http://labs.domain.com
   - name: Github
-    url : http://www.github.com/zeuxisoo
+    url : http://www.github.com/user

@@ -1,0 +1,132 @@
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Markdown */
+figure.highlight {
+    background: #EEEEEE;
+    border: 1px solid #DDDDDD;
+    margin: 15px 0px;
+    padding: 7px 15px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    overflow: auto;
+    position: relative;
+}
+
+figure.highlight table {
+    border: 0px;
+}
+
+figure.highlight .gutter {
+    color: #999;
+    padding-right: 15px;
+    border-right: 1px solid #DDDDDD;
+    text-align: right;
+}
+
+figure.highlight table td {
+    border: 0px solid #000;
+}
+
+figure.highlight .code {
+    padding-left: 15px;
+    border-left: 1px solid #fff;
+    color: #666;
+}
+
+figure.highlight pre {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: #EEEEEE;
+}
+
+/* Page */
+.layout-header {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.layout-header .layout-header-gravatar {
+    margin-right: 10px;
+}
+
+.post .post-year {
+    color: #999;
+}
+
+.post .post-list {
+    margin: 16px;
+}
+
+.post .post-list li {
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 2px;
+}
+
+.article .article-title {
+    font-size: 30px;
+    margin: 0px;
+}
+
+.article .article-meta {
+    margin-top: 10px;
+}
+
+.article .article-content {
+    margin-top: 0px;
+}
+
+.tags .tags-title {
+    font-size: 30px;
+    margin: 0px;
+}
+
+.tags .tags-list a.btn {
+    margin-top: 10px;
+}
+
+.tags .tags-list a.btn .tags-badge {
+    background: #EEEEEE;
+    color: #AAAAAA;
+}
+
+.categories .categories-title {
+    font-size: 30px;
+    margin: 0px;
+}
+
+.categories .categories-list a.btn {
+    margin-top: 10px;
+}
+
+.categories .categories-list a.btn .categories-badge {
+    background: #EEEEEE;
+    color: #AAAAAA;
+}
+
+.categories .category-list {
+    padding-left: 20px;
+}
+
+.categories .category-list .category-list-item {
+    margin: 10px 0px;
+}
+
+.categories .category-list .category-list-item .category-list-count {
+    border-radius: 2px;
+    background: #EEEEEE;
+    color: #AAAAAA;
+    margin-left: 5px;
+    padding: 1px 5px;
+}

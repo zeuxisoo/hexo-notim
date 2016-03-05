@@ -1,0 +1,42 @@
+<div id="archive">
+    <% yearPosts = getYearPosts(page.posts) %>
+    <% Object.keys(yearPosts).sort().reverse().forEach(function(year, index) { %>
+        <div class="row post">
+            <div class="col-xs-12">
+                <div class="post-year"><%= year %></div>
+                <div class="post-list">
+                    <ul>
+                        <% yearPosts[year].forEach(function(post) { %>
+                            <li>
+                                <%- date(post.date, 'YYYY-MM-DD') %>
+                                —
+                                <a class="post-title" href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>
+                            </li>
+                        <% }) %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <% }) %>
+
+    <%- simple_paginator() %>
+</div>
+
+<%
+function getYearPosts(posts) {
+    var posts = posts.data;
+    var yearPosts = {};
+
+    posts.forEach(function(post) {
+        var year = post.date.year();
+
+        if ((year in yearPosts) === false) {
+            yearPosts[year] = [];
+        }
+
+        yearPosts[year].push(post);
+    });
+
+    return yearPosts;
+}
+%>

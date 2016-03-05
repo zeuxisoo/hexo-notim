@@ -1,0 +1,14 @@
+<div id="tags" class="tags">
+    <h1 class="tags-title">Tags</h1>
+    <hr>
+    <div class="row tags-list">
+        <div class="col-xs-12">
+            <% site.tags.sort('name').each(function(tag) { %>
+                <a class="btn btn-xs btn-default" href="<%- url_for(tag.path) %>">
+                    <%= tag.name %>
+                    <span class="badge tags-badge"><%= tag.length %></span>
+                </a>
+            <% }) %>
+        </div>
+    </div>
+</div>
