@@ -1,0 +1,17 @@
+gravatar:
+  email: "seekstudio@gmail.com"
+  size : 40
+
+menu:
+  - name: Home
+    url : /
+  - name: Categories
+    url : /categories
+  - name: Tags
+    url : /tags
+  - name: Profile
+    url : http://profile.not.im
+  - name: Labs
+    url : http://labs.not.im
+  - name: Github
+    url : http://www.github.com/zeuxisoo
