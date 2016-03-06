@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "scripts": {
     "server": "../../node_modules/.bin/hexo server --cwd ../..",
-    "watch" : "gulp watch"
+    "watch" : "gulp watch",
+    "assets": "gulp"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
