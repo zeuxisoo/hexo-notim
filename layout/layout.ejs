@@ -6,7 +6,7 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <title><%= pageTitle(config.title, page) %></title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<%- css('css/bundle') %>
+<%- css('css/bundle.min') %>
 </head>
 <body>
 <div class="navbar navbar-default navbar-app visible-xs-block" role="navigation">
@@ -46,7 +46,7 @@
         </div>
     </div>　
 </div>
-<%- js('js/bundle') %>
+<%- js('js/bundle.min') %>
 </body>
 </html>
 
