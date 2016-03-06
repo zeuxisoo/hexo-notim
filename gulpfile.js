@@ -1,5 +1,9 @@
 var gulp = require('gulp'),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat')
+    uglify = require('gulp-uglify')
+    cssmin = require('gulp-cssmin')
+    rename = require('gulp-rename')
+    sequence = require('gulp-sequence');
 
 gulp.task('concat:css', function() {
     return gulp.src([
@@ -25,7 +29,26 @@ gulp.task('copy:bootstrap:fonts', function() {
                .pipe(gulp.dest('source/fonts/'))
 });
 
-gulp.task('default', ['concat:css', 'concat:js', 'copy:bootstrap:fonts'], function() {
-    gulp.watch('assets/css/*.css', ['concat:css']);
-    gulp.watch('assets/js/*.js', ['concat:js']);
+gulp.task('compress:css', function() {
+    return gulp.src('source/css/bundle.css')
+               .pipe(cssmin())
+               .pipe(rename('bundle.min.css'))
+               .pipe(gulp.dest('source/css/'))
+});
+
+gulp.task('compress:js', function() {
+    return gulp.src('source/js/bundle.js')
+               .pipe(uglify())
+               .pipe(rename('bundle.min.js'))
+               .pipe(gulp.dest('source/js/'))
+});
+
+gulp.task('bundle:css', sequence(['concat:css', 'copy:bootstrap:fonts'], 'compress:css'));
+gulp.task('bundle:js', sequence('concat:js', 'compress:js'));
+
+gulp.task('default', sequence('bundle:css', 'bundle:js'));
+
+gulp.task('watch', function() {
+    gulp.watch('assets/css/*.css', ['bundle:css']);
+    gulp.watch('assets/js/*.js', ['bundle:js']);
 });
