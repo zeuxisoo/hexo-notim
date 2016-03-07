@@ -9,6 +9,10 @@ Clone repo to themes directory
     cd your-blog
     git clone git@github.com:zeuxisoo/hexo-notim.git themes/notim
 
+Copy config file
+
+    cp _config.yml.example _config.yml
+
 Build assets like css, js and fonts
 
     cd themes/notim
