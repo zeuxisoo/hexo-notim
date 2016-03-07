@@ -9,9 +9,19 @@ menu:
     url : /categories
   - name: Tags
     url : /tags
+  - name: Links
+    url : /links
   - name: Profile
     url : http://profile.domain.com
   - name: Labs
     url : http://labs.domain.com
   - name: Github
     url : http://www.github.com/user
+
+links:
+  - name: "Site 1"
+    url : "http://site1.example.com"
+    description: "This is description of site 1"
+  - name: "Site 2"
+    url : "http://site2.example.com"
+    description: "This is description of site 2"

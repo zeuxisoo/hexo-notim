@@ -56,6 +56,13 @@ figure.highlight pre {
     margin-bottom: 40px;
 }
 
+.layout-footer {
+    margin-top: 50px;
+    padding-bottom: 10px;
+    color: #888888;
+    font-size: 13px;
+}
+
 .layout-header .layout-header-gravatar {
     margin-right: 10px;
 }
@@ -129,4 +136,19 @@ figure.highlight pre {
     color: #AAAAAA;
     margin-left: 5px;
     padding: 1px 5px;
+}
+
+.links .links-title {
+    font-size: 30px;
+    margin: 0px;
+}
+
+.links .links-list ul {
+    padding-left: 20px;
+}
+
+.links .links-list ul li {
+    color: #999999;
+    font-size: 16px;
+    margin: 10px 0px;
 }

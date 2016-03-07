@@ -1,0 +1,16 @@
+<div id="links" class="links">
+    <h1 class="links-title">Links</h1>
+    <hr>
+    <div class="row links-list">
+        <div class="col-xs-12">
+            <ul>
+                <% theme.links.forEach(function(link) { %>
+                    <li>
+                        <a href="<%= link.url %>" target="_blank"><%= link.name %></a>
+                        <small class="text-muted link-description"><%= link.description %></small>
+                    </li>
+                <% }) %>
+            </ul>
+        </div>
+    </div>
+</div>
