@@ -56,3 +56,17 @@ Edit `source/categories/index.md` like
     layout: categories
     comments: false
     ---
+
+## Enable links page
+
+Create new page named `links`
+
+    hexo new page links
+
+Edit `source/links/index.md` like
+
+    ---
+    title: Links
+    layout: links
+    comments: false
+    ---
