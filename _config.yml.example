@@ -25,3 +25,5 @@ links:
   - name: "Site 2"
     url : "http://site2.example.com"
     description: "This is description of site 2"
+
+google_analytics:
