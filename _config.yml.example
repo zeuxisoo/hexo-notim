@@ -27,3 +27,5 @@ links:
     description: "This is description of site 2"
 
 google_analytics:
+
+disqus_shortname:
