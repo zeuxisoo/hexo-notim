@@ -6,10 +6,10 @@
 <title><%= pageTitle(config.title, page) %></title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <%- css('css/bundle.min') %>
-</head>
 <% if (is_post() && config.generator_amp){ %>
     <link rel="amphtml" href="./amp/index.html">
 <% } %>
+</head>
 <body>
 <div class="navbar navbar-default navbar-app visible-xs-block" role="navigation">
     <div class="container">
