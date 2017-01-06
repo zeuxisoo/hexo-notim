@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title><%= pageTitle(config.title, page) %></title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="canonical" href="<%- link_canonical(config, page) %>">
 <%- css('css/bundle.min') %>
+<link rel="canonical" href="<%- link_canonical(config, page) %>">
 <% if (is_post() && config.generator_amp){ %>
     <link rel="amphtml" href="./amp/index.html">
 <% } %>
