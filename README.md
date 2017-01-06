@@ -4,6 +4,11 @@ A minimalist theme for hexo
 
 ## Installation
 
+Install the plugin for hexo
+
+    npm install hexo-generator-amp --save
+    npm install hexo-generator-sitemap --save
+
 Clone repo to themes directory
 
     cd your-blog
@@ -28,6 +33,11 @@ Enable theme in blog settings
 Update theme settings like gravatar and menus
 
     vim themes/notim/_config.yml
+
+Copy the hexo config and amp template files
+
+    cp -Rf themes/notim/hexo/_config.yml ./_config.yml
+    cp -Rf themes/notim/hexo/amp ./amp
 
 ## Enable tags page
 
