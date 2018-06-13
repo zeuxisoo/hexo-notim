@@ -94,6 +94,10 @@ figure.highlight pre {
     margin-top: 0px;
 }
 
+.article .article-content ol, ul {
+    padding-left: 15px;
+}
+
 .tags .tags-title {
     font-size: 30px;
     margin: 0px;
