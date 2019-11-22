@@ -16,7 +16,7 @@ Clone repo to themes directory
 
 Copy config file
 
-    cp _config.yml.example _config.yml
+    cp themes/notim/_config.yml.example themes/notim/_config.yml
 
 Build assets like css, js and fonts
 
