@@ -11,10 +11,10 @@ menu:
     url : /tags
   - name: Links
     url : /links
-  - name: Profile
-    url : http://profile.domain.com
-  - name: Labs
-    url : http://labs.domain.com
+  - name: Project
+    url : http://project.domain.com
+  - name: Lab
+    url : http://lab.domain.com
   - name: Github
     url : http://www.github.com/user
 
