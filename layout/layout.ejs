@@ -45,6 +45,23 @@
             <%- body %>
         </div>
     </div>
+    <% if (theme.google_adsense.enable) { %>
+        <div class="row">
+            <div class="col-xs-12">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=<%= theme.google_adsense.client_id %>"
+                    crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="<%= theme.google_adsense.client_id %>"
+                    data-ad-slot="<%= theme.google_adsense.slot_id%>"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    <% } %>
     <div class="row layout-footer">
         <div class="col-xs-12">
             <small class="text-muted">

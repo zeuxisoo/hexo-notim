@@ -28,4 +28,9 @@ links:
 
 google_analytics:
 
+google_adsense:
+    enable: false
+    client_id: ca-pub-123456
+    slot_id: 123456
+
 disqus_shortname:
